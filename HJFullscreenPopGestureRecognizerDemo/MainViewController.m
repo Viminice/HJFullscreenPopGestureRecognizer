@@ -30,9 +30,4 @@
     [self.navigationController hj_animatedPushViewController:first];
 }
 
-
-- (void)dealloc {
-    NSLog(@"我死了");
-}
-
 @end

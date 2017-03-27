@@ -28,8 +28,4 @@
     [self.navigationController hj_animatedPopToRootViewController];
 }
 
-- (void)dealloc {
-    NSLog(@"我死了");
-}
-
 @end

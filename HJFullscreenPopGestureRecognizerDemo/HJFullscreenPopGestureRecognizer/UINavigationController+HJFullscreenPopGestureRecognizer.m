@@ -18,18 +18,18 @@
 #define HJ_PRESENTEDVIEWCONTROLLER  HJ_ROOTVIEWCONTROLLER.presentedViewController
 
 static const void *hj_fullscreenPopGestureRecognizerKey = "hj_fullscreenPopGestureRecognizerKey";
-
-static NSMutableArray *hj_imagesArr;
+static const void *hj_imagesArrKey = "hj_imagesArrKey";
 
 @interface UINavigationController () <UIGestureRecognizerDelegate>
+
+/** imageArr */
+@property (strong, nonatomic) NSMutableArray *hj_imagesArr;
 
 @end
 
 @implementation UINavigationController (HJFullscreenPopGestureRecognizer)
 
 + (void)load {
-    // 初始化hj_imagesArr
-    hj_imagesArr = [NSMutableArray array];
     // 交换方法
     Method hj_push = class_getInstanceMethod(self, @selector(hj_pushViewController:animated:));
     Method push = class_getInstanceMethod(self, @selector(pushViewController:animated:));
@@ -42,6 +42,20 @@ static NSMutableArray *hj_imagesArr;
     Method hj_popToRoot = class_getInstanceMethod(self, @selector(hj_popToRootViewControllerAnimated:));
     Method popToRoot = class_getInstanceMethod(self, @selector(popToRootViewControllerAnimated:));
     method_exchangeImplementations(hj_popToRoot, popToRoot);
+}
+
+- (void)setHj_imagesArr:(NSMutableArray *)hj_imagesArr {
+    objc_setAssociatedObject(self, hj_imagesArrKey, hj_imagesArr, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (NSMutableArray *)hj_imagesArr {
+    static NSMutableArray *hj_imagesArr = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        hj_imagesArr = [NSMutableArray array];
+        self.hj_imagesArr = hj_imagesArr;
+    });
+    return objc_getAssociatedObject(self, hj_imagesArrKey);
 }
 
 - (void)setHj_fullscreenPopGestureRecognizer:(UIPanGestureRecognizer *)hj_fullscreenPopGestureRecognizer {
@@ -116,9 +130,9 @@ static NSMutableArray *hj_imagesArr;
 - (UIViewController *)hj_popViewControllerAnimated:(BOOL)animated {
     UIViewController *viewController = [self hj_popViewControllerAnimated:animated];
     // 删除最后一张图片
-    [hj_imagesArr removeLastObject];
+    [self.hj_imagesArr removeLastObject];
     // 设置图片
-    UIImage *image = hj_imagesArr.lastObject;
+    UIImage *image = self.hj_imagesArr.lastObject;
     if (image) {
         HJ_KEYWINDOW.hj_fullscreenPopGestureRecognizerView.hj_fullscreenImage = image;
     }
@@ -129,7 +143,7 @@ static NSMutableArray *hj_imagesArr;
     NSArray *arr = [self hj_popToRootViewControllerAnimated:animated];
     HJ_KEYWINDOW.hj_fullscreenPopGestureRecognizerView.hj_fullscreenImage = nil;
     // 删除所有的图片
-    [hj_imagesArr removeAllObjects];
+    [self.hj_imagesArr removeAllObjects];
     return arr;
 }
 
@@ -177,7 +191,7 @@ static NSMutableArray *hj_imagesArr;
 - (NSArray<UIViewController *> *)hj_animatedPopToRootViewController {
     __block NSArray *arr = nil;
     // 设置图片
-    UIImage *image = hj_imagesArr.firstObject;
+    UIImage *image = self.hj_imagesArr.firstObject;
     if (image) {
         HJ_KEYWINDOW.hj_fullscreenPopGestureRecognizerView.hj_fullscreenImage = image;
     }
@@ -206,7 +220,7 @@ static NSMutableArray *hj_imagesArr;
     // 关闭图形上下文
     UIGraphicsEndImageContext();
     // 保存图片
-    [hj_imagesArr addObject:image];
+    [self.hj_imagesArr addObject:image];
     return image;
 }
 

@@ -39,8 +39,4 @@
     [self.navigationController hj_animatedPopViewController];
 }
 
-- (void)dealloc {
-    NSLog(@"我死了");
-}
-
 @end
