@@ -15,8 +15,8 @@
 
 @implementation ThirdController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     self.hj_fullscreenPopGestureRecognizerEnabled = YES;
 }
 
@@ -26,6 +26,10 @@
 
 - (IBAction)animatedPopToRootViewController:(id)sender {
     [self.navigationController hj_animatedPopToRootViewController];
+}
+
+- (void)dealloc {
+    NSLog(@"我死了");
 }
 
 @end

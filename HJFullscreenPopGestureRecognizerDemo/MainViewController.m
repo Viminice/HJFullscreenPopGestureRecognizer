@@ -31,4 +31,8 @@
 }
 
 
+- (void)dealloc {
+    NSLog(@"我死了");
+}
+
 @end

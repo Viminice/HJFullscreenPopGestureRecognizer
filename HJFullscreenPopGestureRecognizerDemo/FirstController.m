@@ -16,8 +16,8 @@
 
 @implementation FirstController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     self.hj_fullscreenPopGestureRecognizerEnabled = YES;
 }
 
@@ -39,5 +39,8 @@
     [self.navigationController hj_animatedPopViewController];
 }
 
+- (void)dealloc {
+    NSLog(@"我死了");
+}
 
 @end

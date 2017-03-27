@@ -19,7 +19,6 @@ static const void *hj_fullscreenPopGestureRecognizerEnabledKey = "hj_fullscreenP
     objc_setAssociatedObject(self, hj_fullscreenPopGestureRecognizerEnabledKey, @(hj_fullscreenPopGestureRecognizerEnabled), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     // 全屏返回手势开关
     self.navigationController.hj_fullscreenPopGestureRecognizer.enabled = hj_fullscreenPopGestureRecognizerEnabled;
-    self.navigationController.interactivePopGestureRecognizer.enabled = !hj_fullscreenPopGestureRecognizerEnabled;
 }
 
 - (BOOL)hj_fullscreenPopGestureRecognizerEnabled {

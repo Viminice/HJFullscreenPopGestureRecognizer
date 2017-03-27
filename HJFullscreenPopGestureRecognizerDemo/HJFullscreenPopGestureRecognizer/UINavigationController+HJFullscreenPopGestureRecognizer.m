@@ -53,6 +53,7 @@ static NSMutableArray *hj_imagesArr;
     // 添加手势
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
+        self.interactivePopGestureRecognizer.enabled = NO;
         UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
         pan.delegate = self;
         [self.view addGestureRecognizer:pan];
