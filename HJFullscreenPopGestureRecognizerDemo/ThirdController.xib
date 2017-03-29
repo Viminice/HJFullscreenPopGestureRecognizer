@@ -45,13 +45,45 @@
                         <action selector="animatedPopToRootViewController:" destination="-1" eventType="touchUpInside" id="hN2-au-bKq"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23k-EQ-IMC">
+                    <rect key="frame" x="20" y="340" width="335" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="V5c-mr-Tsy"/>
+                    </constraints>
+                    <state key="normal" title="popToViewController">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="popToViewController:" destination="-1" eventType="touchUpInside" id="ane-nC-jcj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RST-LY-mt1">
+                    <rect key="frame" x="20" y="410" width="335" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="LKN-OQ-zdO"/>
+                    </constraints>
+                    <state key="normal" title="animatedPopToViewController">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="animatedPopToViewController:" destination="-1" eventType="touchUpInside" id="Li2-EL-Ihx"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="23k-EQ-IMC" secondAttribute="trailing" constant="20" id="6bm-Ep-Xsn"/>
+                <constraint firstItem="23k-EQ-IMC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="70h-wP-7Y0"/>
                 <constraint firstItem="Faw-0s-lJT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Cg0-bA-Qjz"/>
+                <constraint firstItem="RST-LY-mt1" firstAttribute="top" secondItem="23k-EQ-IMC" secondAttribute="bottom" constant="30" id="TdT-eC-Z14"/>
+                <constraint firstAttribute="trailing" secondItem="RST-LY-mt1" secondAttribute="trailing" constant="20" id="YNe-ij-3FW"/>
                 <constraint firstItem="Faw-0s-lJT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="200" id="cvk-Yp-7jF"/>
                 <constraint firstItem="zbh-Yn-mQ3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="du2-U8-xkg"/>
                 <constraint firstAttribute="trailing" secondItem="Faw-0s-lJT" secondAttribute="trailing" constant="20" id="fFC-fK-bbL"/>
+                <constraint firstItem="23k-EQ-IMC" firstAttribute="top" secondItem="zbh-Yn-mQ3" secondAttribute="bottom" constant="30" id="how-nh-K4B"/>
+                <constraint firstItem="RST-LY-mt1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="kfb-1g-gKQ"/>
                 <constraint firstAttribute="trailing" secondItem="zbh-Yn-mQ3" secondAttribute="trailing" constant="20" id="usx-0S-tOA"/>
                 <constraint firstItem="zbh-Yn-mQ3" firstAttribute="top" secondItem="Faw-0s-lJT" secondAttribute="bottom" constant="30" id="x6I-Ia-tmO"/>
             </constraints>

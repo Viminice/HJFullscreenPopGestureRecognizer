@@ -42,6 +42,10 @@ static const void *hj_imagesArrKey = "hj_imagesArrKey";
     Method hj_popToRoot = class_getInstanceMethod(self, @selector(hj_popToRootViewControllerAnimated:));
     Method popToRoot = class_getInstanceMethod(self, @selector(popToRootViewControllerAnimated:));
     method_exchangeImplementations(hj_popToRoot, popToRoot);
+    
+    Method hj_popToVC = class_getInstanceMethod(self, @selector(hj_popToViewController:animated:));
+    Method popToVC = class_getInstanceMethod(self, @selector(popToViewController:animated:));
+    method_exchangeImplementations(hj_popToVC, popToVC);
 }
 
 - (void)setHj_imagesArr:(NSMutableArray *)hj_imagesArr {
@@ -147,6 +151,20 @@ static const void *hj_imagesArrKey = "hj_imagesArrKey";
     return arr;
 }
 
+- (NSArray<UIViewController *> *)hj_popToViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    NSArray *arr = [self hj_popToViewController:viewController animated:animated];
+    // 删除图片
+    for (NSInteger i = 0; i < arr.count; i++) {
+        [self.hj_imagesArr removeLastObject];
+    }
+    // 设置图片
+    UIImage *image = self.hj_imagesArr.lastObject;
+    if (image) {
+        HJ_KEYWINDOW.hj_fullscreenPopGestureRecognizerView.hj_fullscreenImage = image;
+    }
+    return arr;
+}
+
 #pragma mark - 动画push/动画pop
 - (void)hj_animatedPushViewController:(UIViewController *)viewController {
     // 截图并设置图片
@@ -203,6 +221,33 @@ static const void *hj_imagesArrKey = "hj_imagesArrKey";
         HJ_PRESENTEDVIEWCONTROLLER.view.transform = CGAffineTransformMakeTranslation(HJ_KEYWINDOW.hj_width, 0);
     } completion:^(BOOL finished) {
         arr = [self popToRootViewControllerAnimated:NO];
+        // 恢复
+        HJ_ROOTVIEWCONTROLLER.view.transform = CGAffineTransformIdentity;
+        HJ_PRESENTEDVIEWCONTROLLER.view.transform = CGAffineTransformIdentity;
+        HJ_KEYWINDOW.hj_fullscreenPopGestureRecognizerView.hidden = YES;
+    }];
+    return arr;
+}
+
+- (NSArray<UIViewController *> *)hj_animatedPopToViewController:(UIViewController *)viewController {
+    __block NSArray *arr = nil;
+    // 找到viewController的索引
+    NSInteger i = 0;
+    while (self.viewControllers[i] != viewController) {
+        i++;
+    }
+    // 设置图片
+    UIImage *image = self.hj_imagesArr[i];
+    if (image) {
+        HJ_KEYWINDOW.hj_fullscreenPopGestureRecognizerView.hj_fullscreenImage = image;
+    }
+    HJ_KEYWINDOW.hj_fullscreenPopGestureRecognizerView.hidden = NO;
+    [UIView animateWithDuration:0.25 animations:^{
+        // 平移出窗口
+        HJ_ROOTVIEWCONTROLLER.view.transform = CGAffineTransformMakeTranslation(HJ_KEYWINDOW.hj_width, 0);
+        HJ_PRESENTEDVIEWCONTROLLER.view.transform = CGAffineTransformMakeTranslation(HJ_KEYWINDOW.hj_width, 0);
+    } completion:^(BOOL finished) {
+        arr = [self popToViewController:viewController animated:NO];
         // 恢复
         HJ_ROOTVIEWCONTROLLER.view.transform = CGAffineTransformIdentity;
         HJ_PRESENTEDVIEWCONTROLLER.view.transform = CGAffineTransformIdentity;

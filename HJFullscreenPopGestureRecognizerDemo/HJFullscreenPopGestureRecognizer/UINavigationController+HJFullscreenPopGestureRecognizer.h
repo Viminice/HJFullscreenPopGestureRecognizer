@@ -30,4 +30,9 @@
  */
 - (NSArray<UIViewController *> *)hj_animatedPopToRootViewController;
 
+/**
+ *  动画pop到指定控制器
+ */
+- (NSArray<UIViewController *> *)hj_animatedPopToViewController:(UIViewController *)viewController;
+
 @end

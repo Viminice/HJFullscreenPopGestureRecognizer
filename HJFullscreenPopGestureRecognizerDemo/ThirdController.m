@@ -28,4 +28,15 @@
     [self.navigationController hj_animatedPopToRootViewController];
 }
 
+- (IBAction)popToViewController:(id)sender {
+    UIViewController *viewController = self.navigationController.viewControllers[1];
+    [self.navigationController popToViewController:viewController animated:YES];
+}
+
+- (IBAction)animatedPopToViewController:(id)sender {
+    UIViewController *viewController = self.navigationController.viewControllers[1];
+    [self.navigationController hj_animatedPopToViewController:viewController];
+}
+
+
 @end
