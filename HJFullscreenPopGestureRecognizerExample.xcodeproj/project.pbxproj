@@ -1,0 +1,381 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F2134FF1E8C945F00B8DC36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2134FE1E8C945F00B8DC36 /* main.m */; };
+		6F21350A1E8C945F00B8DC36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F2135091E8C945F00B8DC36 /* Assets.xcassets */; };
+		6F21350D1E8C945F00B8DC36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F21350B1E8C945F00B8DC36 /* LaunchScreen.storyboard */; };
+		6F2135221E8C94FE00B8DC36 /* HJFullscreenPopGestureRecognizerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2135191E8C94FE00B8DC36 /* HJFullscreenPopGestureRecognizerView.m */; };
+		6F2135231E8C94FE00B8DC36 /* UINavigationController+HJFullscreenPopGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F21351B1E8C94FE00B8DC36 /* UINavigationController+HJFullscreenPopGestureRecognizer.m */; };
+		6F2135241E8C94FE00B8DC36 /* UIView+HJFullscreenPopGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F21351D1E8C94FE00B8DC36 /* UIView+HJFullscreenPopGestureRecognizer.m */; };
+		6F2135251E8C94FE00B8DC36 /* UIViewController+HJFullscreenPopGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F21351F1E8C94FE00B8DC36 /* UIViewController+HJFullscreenPopGestureRecognizer.m */; };
+		6F2135261E8C94FE00B8DC36 /* UIWindow+HJFullscreenPopGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2135211E8C94FE00B8DC36 /* UIWindow+HJFullscreenPopGestureRecognizer.m */; };
+		6F2135331E8C956600B8DC36 /* FirstController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2135281E8C956600B8DC36 /* FirstController.m */; };
+		6F2135341E8C956600B8DC36 /* FirstController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F2135291E8C956600B8DC36 /* FirstController.xib */; };
+		6F2135351E8C956600B8DC36 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F21352B1E8C956600B8DC36 /* MainViewController.m */; };
+		6F2135361E8C956600B8DC36 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F21352C1E8C956600B8DC36 /* MainViewController.xib */; };
+		6F2135371E8C956600B8DC36 /* SecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F21352E1E8C956600B8DC36 /* SecondController.m */; };
+		6F2135381E8C956600B8DC36 /* SecondController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F21352F1E8C956600B8DC36 /* SecondController.xib */; };
+		6F2135391E8C956600B8DC36 /* ThirdController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2135311E8C956600B8DC36 /* ThirdController.m */; };
+		6F21353A1E8C956600B8DC36 /* ThirdController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F2135321E8C956600B8DC36 /* ThirdController.xib */; };
+		6F21353D1E8C957600B8DC36 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F21353C1E8C957600B8DC36 /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6F2134FA1E8C945F00B8DC36 /* HJFullscreenPopGestureRecognizerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HJFullscreenPopGestureRecognizerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F2134FE1E8C945F00B8DC36 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6F2135091E8C945F00B8DC36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F21350C1E8C945F00B8DC36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6F21350E1E8C945F00B8DC36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F2135171E8C94FE00B8DC36 /* HJFullscreenPopGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HJFullscreenPopGestureRecognizer.h; path = HJFullscreenPopGestureRecognizer/HJFullscreenPopGestureRecognizer.h; sourceTree = SOURCE_ROOT; };
+		6F2135181E8C94FE00B8DC36 /* HJFullscreenPopGestureRecognizerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HJFullscreenPopGestureRecognizerView.h; path = HJFullscreenPopGestureRecognizer/HJFullscreenPopGestureRecognizerView.h; sourceTree = SOURCE_ROOT; };
+		6F2135191E8C94FE00B8DC36 /* HJFullscreenPopGestureRecognizerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HJFullscreenPopGestureRecognizerView.m; path = HJFullscreenPopGestureRecognizer/HJFullscreenPopGestureRecognizerView.m; sourceTree = SOURCE_ROOT; };
+		6F21351A1E8C94FE00B8DC36 /* UINavigationController+HJFullscreenPopGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+HJFullscreenPopGestureRecognizer.h"; path = "HJFullscreenPopGestureRecognizer/UINavigationController+HJFullscreenPopGestureRecognizer.h"; sourceTree = SOURCE_ROOT; };
+		6F21351B1E8C94FE00B8DC36 /* UINavigationController+HJFullscreenPopGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+HJFullscreenPopGestureRecognizer.m"; path = "HJFullscreenPopGestureRecognizer/UINavigationController+HJFullscreenPopGestureRecognizer.m"; sourceTree = SOURCE_ROOT; };
+		6F21351C1E8C94FE00B8DC36 /* UIView+HJFullscreenPopGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+HJFullscreenPopGestureRecognizer.h"; path = "HJFullscreenPopGestureRecognizer/UIView+HJFullscreenPopGestureRecognizer.h"; sourceTree = SOURCE_ROOT; };
+		6F21351D1E8C94FE00B8DC36 /* UIView+HJFullscreenPopGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+HJFullscreenPopGestureRecognizer.m"; path = "HJFullscreenPopGestureRecognizer/UIView+HJFullscreenPopGestureRecognizer.m"; sourceTree = SOURCE_ROOT; };
+		6F21351E1E8C94FE00B8DC36 /* UIViewController+HJFullscreenPopGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+HJFullscreenPopGestureRecognizer.h"; path = "HJFullscreenPopGestureRecognizer/UIViewController+HJFullscreenPopGestureRecognizer.h"; sourceTree = SOURCE_ROOT; };
+		6F21351F1E8C94FE00B8DC36 /* UIViewController+HJFullscreenPopGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+HJFullscreenPopGestureRecognizer.m"; path = "HJFullscreenPopGestureRecognizer/UIViewController+HJFullscreenPopGestureRecognizer.m"; sourceTree = SOURCE_ROOT; };
+		6F2135201E8C94FE00B8DC36 /* UIWindow+HJFullscreenPopGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIWindow+HJFullscreenPopGestureRecognizer.h"; path = "HJFullscreenPopGestureRecognizer/UIWindow+HJFullscreenPopGestureRecognizer.h"; sourceTree = SOURCE_ROOT; };
+		6F2135211E8C94FE00B8DC36 /* UIWindow+HJFullscreenPopGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIWindow+HJFullscreenPopGestureRecognizer.m"; path = "HJFullscreenPopGestureRecognizer/UIWindow+HJFullscreenPopGestureRecognizer.m"; sourceTree = SOURCE_ROOT; };
+		6F2135271E8C956600B8DC36 /* FirstController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstController.h; sourceTree = "<group>"; };
+		6F2135281E8C956600B8DC36 /* FirstController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstController.m; sourceTree = "<group>"; };
+		6F2135291E8C956600B8DC36 /* FirstController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstController.xib; sourceTree = "<group>"; };
+		6F21352A1E8C956600B8DC36 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		6F21352B1E8C956600B8DC36 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		6F21352C1E8C956600B8DC36 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		6F21352D1E8C956600B8DC36 /* SecondController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondController.h; sourceTree = "<group>"; };
+		6F21352E1E8C956600B8DC36 /* SecondController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondController.m; sourceTree = "<group>"; };
+		6F21352F1E8C956600B8DC36 /* SecondController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondController.xib; sourceTree = "<group>"; };
+		6F2135301E8C956600B8DC36 /* ThirdController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdController.h; sourceTree = "<group>"; };
+		6F2135311E8C956600B8DC36 /* ThirdController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdController.m; sourceTree = "<group>"; };
+		6F2135321E8C956600B8DC36 /* ThirdController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdController.xib; sourceTree = "<group>"; };
+		6F21353B1E8C957600B8DC36 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6F21353C1E8C957600B8DC36 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F2134F71E8C945F00B8DC36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F2134F11E8C945E00B8DC36 = {
+			isa = PBXGroup;
+			children = (
+				6F2134FC1E8C945F00B8DC36 /* HJFullscreenPopGestureRecognizerExample */,
+				6F2134FB1E8C945F00B8DC36 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6F2134FB1E8C945F00B8DC36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F2134FA1E8C945F00B8DC36 /* HJFullscreenPopGestureRecognizerExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F2134FC1E8C945F00B8DC36 /* HJFullscreenPopGestureRecognizerExample */ = {
+			isa = PBXGroup;
+			children = (
+				6F2135161E8C94EF00B8DC36 /* HJFullscreenPopGestureRecognizer */,
+				6F2135271E8C956600B8DC36 /* FirstController.h */,
+				6F2135281E8C956600B8DC36 /* FirstController.m */,
+				6F2135291E8C956600B8DC36 /* FirstController.xib */,
+				6F21353B1E8C957600B8DC36 /* AppDelegate.h */,
+				6F21353C1E8C957600B8DC36 /* AppDelegate.m */,
+				6F21352A1E8C956600B8DC36 /* MainViewController.h */,
+				6F21352B1E8C956600B8DC36 /* MainViewController.m */,
+				6F21352C1E8C956600B8DC36 /* MainViewController.xib */,
+				6F21352D1E8C956600B8DC36 /* SecondController.h */,
+				6F21352E1E8C956600B8DC36 /* SecondController.m */,
+				6F21352F1E8C956600B8DC36 /* SecondController.xib */,
+				6F2135301E8C956600B8DC36 /* ThirdController.h */,
+				6F2135311E8C956600B8DC36 /* ThirdController.m */,
+				6F2135321E8C956600B8DC36 /* ThirdController.xib */,
+				6F2135091E8C945F00B8DC36 /* Assets.xcassets */,
+				6F21350B1E8C945F00B8DC36 /* LaunchScreen.storyboard */,
+				6F21350E1E8C945F00B8DC36 /* Info.plist */,
+				6F2134FD1E8C945F00B8DC36 /* Supporting Files */,
+			);
+			path = HJFullscreenPopGestureRecognizerExample;
+			sourceTree = "<group>";
+		};
+		6F2134FD1E8C945F00B8DC36 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F2134FE1E8C945F00B8DC36 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6F2135161E8C94EF00B8DC36 /* HJFullscreenPopGestureRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				6F2135171E8C94FE00B8DC36 /* HJFullscreenPopGestureRecognizer.h */,
+				6F2135181E8C94FE00B8DC36 /* HJFullscreenPopGestureRecognizerView.h */,
+				6F2135191E8C94FE00B8DC36 /* HJFullscreenPopGestureRecognizerView.m */,
+				6F21351A1E8C94FE00B8DC36 /* UINavigationController+HJFullscreenPopGestureRecognizer.h */,
+				6F21351B1E8C94FE00B8DC36 /* UINavigationController+HJFullscreenPopGestureRecognizer.m */,
+				6F21351C1E8C94FE00B8DC36 /* UIView+HJFullscreenPopGestureRecognizer.h */,
+				6F21351D1E8C94FE00B8DC36 /* UIView+HJFullscreenPopGestureRecognizer.m */,
+				6F21351E1E8C94FE00B8DC36 /* UIViewController+HJFullscreenPopGestureRecognizer.h */,
+				6F21351F1E8C94FE00B8DC36 /* UIViewController+HJFullscreenPopGestureRecognizer.m */,
+				6F2135201E8C94FE00B8DC36 /* UIWindow+HJFullscreenPopGestureRecognizer.h */,
+				6F2135211E8C94FE00B8DC36 /* UIWindow+HJFullscreenPopGestureRecognizer.m */,
+			);
+			name = HJFullscreenPopGestureRecognizer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F2134F91E8C945F00B8DC36 /* HJFullscreenPopGestureRecognizerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F2135111E8C945F00B8DC36 /* Build configuration list for PBXNativeTarget "HJFullscreenPopGestureRecognizerExample" */;
+			buildPhases = (
+				6F2134F61E8C945F00B8DC36 /* Sources */,
+				6F2134F71E8C945F00B8DC36 /* Frameworks */,
+				6F2134F81E8C945F00B8DC36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HJFullscreenPopGestureRecognizerExample;
+			productName = HJFullscreenPopGestureRecognizerExample;
+			productReference = 6F2134FA1E8C945F00B8DC36 /* HJFullscreenPopGestureRecognizerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F2134F21E8C945E00B8DC36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "广州方鼎软件科技发展有限公司";
+				TargetAttributes = {
+					6F2134F91E8C945F00B8DC36 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6F2134F51E8C945E00B8DC36 /* Build configuration list for PBXProject "HJFullscreenPopGestureRecognizerExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F2134F11E8C945E00B8DC36;
+			productRefGroup = 6F2134FB1E8C945F00B8DC36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F2134F91E8C945F00B8DC36 /* HJFullscreenPopGestureRecognizerExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F2134F81E8C945F00B8DC36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F21350D1E8C945F00B8DC36 /* LaunchScreen.storyboard in Resources */,
+				6F2135341E8C956600B8DC36 /* FirstController.xib in Resources */,
+				6F21350A1E8C945F00B8DC36 /* Assets.xcassets in Resources */,
+				6F2135381E8C956600B8DC36 /* SecondController.xib in Resources */,
+				6F2135361E8C956600B8DC36 /* MainViewController.xib in Resources */,
+				6F21353A1E8C956600B8DC36 /* ThirdController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F2134F61E8C945F00B8DC36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F21353D1E8C957600B8DC36 /* AppDelegate.m in Sources */,
+				6F2135331E8C956600B8DC36 /* FirstController.m in Sources */,
+				6F2135231E8C94FE00B8DC36 /* UINavigationController+HJFullscreenPopGestureRecognizer.m in Sources */,
+				6F2135261E8C94FE00B8DC36 /* UIWindow+HJFullscreenPopGestureRecognizer.m in Sources */,
+				6F2135391E8C956600B8DC36 /* ThirdController.m in Sources */,
+				6F2135351E8C956600B8DC36 /* MainViewController.m in Sources */,
+				6F2134FF1E8C945F00B8DC36 /* main.m in Sources */,
+				6F2135221E8C94FE00B8DC36 /* HJFullscreenPopGestureRecognizerView.m in Sources */,
+				6F2135371E8C956600B8DC36 /* SecondController.m in Sources */,
+				6F2135241E8C94FE00B8DC36 /* UIView+HJFullscreenPopGestureRecognizer.m in Sources */,
+				6F2135251E8C94FE00B8DC36 /* UIViewController+HJFullscreenPopGestureRecognizer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6F21350B1E8C945F00B8DC36 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F21350C1E8C945F00B8DC36 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6F21350F1E8C945F00B8DC36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6F2135101E8C945F00B8DC36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F2135121E8C945F00B8DC36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HJFullscreenPopGestureRecognizerExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HJFullscreenPopGestureRecognizerExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6F2135131E8C945F00B8DC36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HJFullscreenPopGestureRecognizerExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HJFullscreenPopGestureRecognizerExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F2134F51E8C945E00B8DC36 /* Build configuration list for PBXProject "HJFullscreenPopGestureRecognizerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F21350F1E8C945F00B8DC36 /* Debug */,
+				6F2135101E8C945F00B8DC36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F2135111E8C945F00B8DC36 /* Build configuration list for PBXNativeTarget "HJFullscreenPopGestureRecognizerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F2135121E8C945F00B8DC36 /* Debug */,
+				6F2135131E8C945F00B8DC36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6F2134F21E8C945E00B8DC36 /* Project object */;
+}
