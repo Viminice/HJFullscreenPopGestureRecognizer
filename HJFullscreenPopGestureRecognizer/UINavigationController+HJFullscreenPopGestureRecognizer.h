@@ -11,11 +11,6 @@
 @interface UINavigationController (HJFullscreenPopGestureRecognizer)
 
 /**
- *  全屏返回手势
- */
-@property (weak, nonatomic) UIPanGestureRecognizer *hj_fullscreenPopGestureRecognizer;
-
-/**
  *  动画push
  */
 - (void)hj_animatedPushViewController:(UIViewController *)viewController;

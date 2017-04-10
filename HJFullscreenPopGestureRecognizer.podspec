@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "HJFullscreenPopGestureRecognizer"
-  s.version      = "1.0.1"
+  s.version      = "1.1.1"
   s.summary      = "全屏返回手势,类似酷狗音乐的动态push, 动态pop!"
   s.homepage     = "https://github.com/shusheng732/HJFullscreenPopGestureRecognizer"
   s.license      = "MIT"
