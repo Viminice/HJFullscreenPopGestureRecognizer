@@ -20,8 +20,8 @@ pod 'HJFullscreenPopGestureRecognizer'
 
 + 1.全屏返回手势
 ```objc
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
+- (void)viewDidLoad {
+    [super viewDidLoad];
     self.hj_fullscreenPopGestureRecognizerEnabled = YES;
 }
 ```

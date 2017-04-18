@@ -36,8 +36,8 @@ static const void *hj_fullscreenPopGestureRecognizerViewExistKey = "hj_fullscree
     if (!self.hj_fullscreenPopGestureRecognizerViewExist) {
         HJFullscreenPopGestureRecognizerView *hj_fullscreenPopGestureRecognizerView = [[HJFullscreenPopGestureRecognizerView alloc] initWithFrame:self.bounds];
         [self insertSubview:hj_fullscreenPopGestureRecognizerView atIndex:0];
-        self.hj_fullscreenPopGestureRecognizerView = hj_fullscreenPopGestureRecognizerView;
         self.hj_fullscreenPopGestureRecognizerViewExist = YES;
+        self.hj_fullscreenPopGestureRecognizerView = hj_fullscreenPopGestureRecognizerView;
     }
     return objc_getAssociatedObject(self, hj_fullscreenPopGestureRecognizerViewKey);
 }
