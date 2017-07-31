@@ -37,3 +37,5 @@ pod 'HJFullscreenPopGestureRecognizer'
 ```
 
 # Over. it's just so easy!
+
+# 发现Bug,暂时没时间折腾!
